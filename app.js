@@ -24,7 +24,8 @@ var str =
 // var strUserWord = '向上';
 // var strUserWord = '天天向上';
 // var strUserWord = '天向上';
-var strUserWord = '天向上个';
+// var strUserWord = '天向上个';
+var strUserWord = '天向上是个';
 // var strUserWord = '是个好看';
 // var strUserWord = '节目';
 
@@ -35,9 +36,16 @@ var usrWordArr = strUserWord.split("");
 var usrWordArr2 = usrWordArr;
 
 // 正则
-var usrWordRe = usrWordArr.join(".*?:*?.*?");
+// var usrWordRe = usrWordArr.join(".*?:*?.*?");
+// var usrWordRe = usrWordArr.join("w*?:*?w*?");
+var usrWordRe = usrWordArr.join("[^\u4e00-\u9fa5]*?:*?[^\u4e00-\u9fa5]*?");
+
 var matchStrArr = str.match(usrWordRe);
 // str.match(usrWordRe);
+
+// if (matchStrArr.length == 0){
+//     return;
+// }
 
 
 var usrWordArr3 = [];
