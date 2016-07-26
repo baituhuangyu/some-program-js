@@ -2,6 +2,7 @@
  * Created by hy on 16-5-22.
  */
 
+// 本功能是实现查找HTML源码中标签的文字（文字跨标签），并对文字加a标签
 
 console.log("ok");
 
